@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:ital@1&family=Galada&display=swap" rel="stylesheet">
+
+ 
+ <title></title>
+</head>
+<style>
+ *{
+  margin: 0;
+  padding: 0;
+  
+ }
+:root{
+ --primiry-color:#edf2fc;
+ --second-color:#212121;
+}
+ 
+ body{
+  background: #111;
+  height: 100vh;
+  
+  display: flex;
+  flex-direction: column;
+  background: var(--primiry-color);
+  
+  
+ }
+ .head{
+
+ 
+  width: 100%;
+  text-align: center;
+ 
+ margin-left: 40px;
+ font-family: 'Amiri', serif;
+font-family: 'Galada', cursive;
+margin-top: -50px;
+
+
+ }
+ nav img{
+ width: 140px;
+ }
+ nav{
+margin: 0 auto;
+ width: 84%;
+ padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+ 
+ 
+ }
+ .head nav ul{
+  flex: 1;
+  text-align: right;
+  list-style: none;
+  display: flex;
+  margin-left: 130px;
+  
+  
+ }
+  .head nav ul li{
+   margin: 22px;
+  
+  }
+   .head nav ul li a{
+    text-decoration: none;
+    color: var(--second-color);
+    font-weight: bold;
+    font-size: 19px;
+  text-transform:uppercase;
+   
+   }
+    .head nav ul li a:hover{
+     color: #C52ED2;
+     border-bottom: solid 1px #C52ED2;
+    }
+    #moon{
+     width: 30px;
+     height: 30px;
+     margin-top: 17px;
+    }
+ 
+ min{
+  flex: 1;
+ display: flex;
+align-items:center;
+
+ }
+
+ 
+ .photo img{
+  width: 270px;
+ position: relative;
+  left: 40px;
+  top: 30px;
+  transition: 0.8s;
+ }
+  .photo img:hover{
+   left: 67px;
+  }
+ .info{
+  margin-left: 15%;
+  font-family: 'Amiri', serif;
+font-family: 'Galada', cursive;
+ }
+ .info h1{
+  font-size: 30px;
+  color: var(--second-color);
+  margin-bottom: 10px;
+ }
+ .info h1 span {
+  color: #9767cd;
+ }
+ .info p{
+ font-size:26px;
+ width: 530px;
+ color: var(--second-color);
+ font-family: 'Amiri', serif;
+font-family: 'Galada', cursive;
+font-family: 'Noto Naskh Arabic', serif;
+ }
+ .icon{
+  margin-left: -63px;
+  margin-bottom: -229px;
+ 
+  width: 30px;
+  box-shadow: 5px 4px 10px  #9767cd;
+  
+ }
+ .icon a{
+ display:block;
+ font-size: 28px;
+ margin-top: 55px;
+ width: 30px;
+ text-shadow: 5px 4px 4px #9767cd;
+
+ }
+ .icon a i{
+  color: var(--second-color);
+  width: 40px;
+  border-radius: 50%;
+  
+ }
+ .info button{
+  background: var(--second-color);
+  border: none;
+  outline: none;
+  padding: 10px;
+  color: var(--primiry-color);
+  border-radius: 8px;
+  margin-top: 20px;
+ }
+ .dark{
+   --primiry-color:#212121;
+ --second-color:#edf2fc;
+ }
+ .about{
+  flex:1;
+  background: var(--second-color);
+margin-top: 25px;
+
+width:1100px ;
+ }
+ .about h1{
+ color:#9767cd;
+border-bottom: 4px solid #9767cd;
+width: 180px;
+text-align: center;
+margin-left: 45%;
+margin-top: 10px;
+text-transform: uppercase;
+
+
+ }
+ .about h1:after{
+  content: "";
+  position: absolute;
+  background: yellow;
+ 
+ width: 30px;
+ height: 30px;
+ border-radius: 50%;
+ right: 50px;
+ z-index: -2;
+  
+ 
+ }
+ 
+ .skils{
+  text-align: center;
+  margin-top: 30px;
+  box-shadow: 5px 4px 10px  #9767cd;
+  width: 500px;
+  margin-left: 30%;
+  align-items: center;
+ }
+ .skils li{
+  list-style: none;
+  margin: 20px;
+  padding: 10px;
+  color: var(--primiry-color);
+  text-transform: uppercase;
+ }
+ .br{
+  display: block;
+  width: 420px;
+  height: 10px;
+  background: gray;
+  margin-top: 14px;
+  -webkit-background-origin: ;
+  background-origin: ;rder-radius: 3px;
+  border-radius: 9px;
+ }
+ .br span{
+  background: #9767cd;
+  height: 10px;
+  float: left;
+  border-radius: 11px;
+ }
+ .html{
+  width: 90%;
+ animation: html 7s infinite ;
+ border-radius: 11px;
+ }
+  .css{
+  width: 85%;
+ animation: css  7s infinite;
+ }
+  .js {
+   width: 75%;
+   animation: js  7s infinite;
+  }
+   .bottstrap {
+    width: 50%;
+    animation: bottstrap  7s infinite;
+   }
+   
+   @keyframes html{
+    0%{
+     width:0%;
+    }
+    100%{
+     width:90%;
+    }
+   }
+   @keyframes css{
+    0%{
+     width:0%;
+    }
+    100%{
+     width:85%;
+    }
+   }
+   @keyframes js{
+    0%{
+     width:0%;
+    }
+    100%{
+     width:75%;
+    }
+   }
+   @keyframes bottstrap{
+    0%{
+     width:0%;
+    }
+    100%{
+     width:50%;
+    }
+   }
+   .html:after{
+    content:"90%";
+    position: relative;
+    left: 30px;
+    font-size: 11px;
+    bottom: 5px;
+    color: #fff;
+   }
+    .css:after{
+    content:"85%";
+    position: relative;
+    left: 30px;
+    font-size: 11px;
+    bottom: 5px;
+    color: #fff;
+   }
+    .js:after {
+     content: "75%";
+     position: relative;
+     left: 30px;
+     font-size: 11px;
+     bottom: 5px;
+   color: #fff;
+    }
+     .bottstrap:after {
+      content: "50%";
+      position: relative;
+      left: 30px;
+      font-size: 11px;
+      bottom: 5px;
+    color: #fff;
+     }
+     
+     .project{
+      flex: 1;
+      background: var(--primiry-color);
+      width: 1100px;
+      font-family: 'Amiri', serif;
+font-family: 'Galada', cursive;
+font-family: 'Noto Naskh Arabic', serif;
+     }
+     .project h1{
+      color:#9767cd;
+border-bottom: 4px solid #9767cd;
+width: 290px;
+text-align: center;
+margin-left: 40%;
+margin-top: 10px;
+text-transform: uppercase;
+
+
+     }
+     
+     .cards{
+      display: flex;
+      flex-wrap: wrap;
+     margin-left: 20px;
+     margin-top: 50px;
+     
+     }
+     .card{
+      box-shadow: 5px 4px 10px  #9767cd;
+      margin: 10px;
+      border-radius: 8px;
+     }
+     .card h4{
+      text-align: center;
+      font-size: 25px;
+      font-weight: bold;
+      color: var(--second-color);
+      font-family: 'Amiri', serif;
+font-family: 'Galada', cursive;
+font-family: 'Harmattan', sans-serif;
+font-family: 'Noto Naskh Arabic', serif;
+     }
+     
+     .card img{
+      width: 240px;
+      height: 160px;
+     }
+     .card a{ text-decoration: none;
+      
+     }
+     
+     .contact{
+      flex: 1;
+      width: 1100px;
+      background: var(--primiry-color);
+      border-top: 6px solid var(--second-color);
+      margin-top: 21px;
+      height: 560px;
+     }
+     .login{
+      margin-left:30%;
+      margin-top: 180px;
+      
+      
+     
+     }
+     .login input{
+      display: block;
+      width: 420px;
+      height: 40px;
+      margin-top: 25px;
+      background: none;
+      outline: none;
+      text-align: center;
+      border-radius: 11px;
+      color: var(--second-color);
+      font-size: 19px;
+      border: var(--second-color) 1px solid;
+     }
+     .login input:focus{
+      border: solid 3px #9767cd;
+     }
+     textarea{
+      background: none;
+      text-align: center;
+      margin-top: 25px;
+      display: block;
+      padding-top: 20px;
+      outline: none;
+      color: var(--second-color);
+      border-radius: 11px;
+      border: var(--second-color) 1px solid;
+     
+     }
+     textarea:focus{
+      border:solid 4px #9767cd;
+     }
+     .login button{
+      width: 520px;
+     padding: 8px;
+     margin-top: 24px;
+     margin-left: -50px;
+     font-size: 20px;
+     background: #9767cd;
+     border-radius: 16px;
+     color: white;
+     border: none;
+     
+     }
+     .login button:active{
+      background: #CE2F37;
+     }
+     footer{ flex:1;
+      background: var(--second-color);
+      width: 1100px;
+    margin-top: 450px;
+      
+     }
+     footer h1{
+      color: var(--primiry-color);
+      text-align: center;
+     }
+     html{
+      scroll-behavior: smooth;
+     }
+     @media screen and (max-width: 768px) {
+      nav img{
+       width: 100px;
+       margin-left: -80px;
+      }
+      .head nav ul {
+       margin-left: -30px;
+      }
+  .head nav ul li{
+    margin-left: 8px;
+  }
+  .head nav ul li a{
+   font-size: 9px;
+   
+  }
+  #moon{
+   width: 10px;
+   margin-left: 2px;
+   height: 10px;
+   margin-top: 30px;
+  }
+  .info h1{
+  font-size: 16px;
+  margin-left: 20px;
+ }
+ .info p{
+  font-size: 12px;
+  width: 90px;
+  margin-left: 20px;
+ }
+ .icon{
+  position: relative;
+  left: 20px;
+  padding-left: 7px;
+  
+  
+ }
+ .icon a {font-size: 16px;
+ }
+ .about h1{
+  font-size: 16px;
+  position: relative;
+ right: 70px;
+ }
+ .skils{
+  width: 200px;
+  margin-left: 70px;
+ }
+ .skilsl li{
+  
+ }
+ .br{
+  width: 150px;
+ }
+  .photo img {
+    width: 140px;
+    left:-15px;
+    top: 90px;
+    
+  }
+  .photo img:hover{
+   left: 40px;
+  }
+  .project h1{
+   font-size: 16px;
+   position: relative;
+   right: 40px; 
+   width: 150px;
+  }
+  .cards{
+   display: block;
+  }
+  .card{
+   width: 240px;
+   margin-left: 30px;
+   margin-top: 70px;
+  }
+  .login{
+   position: relative;
+   right:40px;
+  }
+  .login input{
+   width: 200px;
+  }
+  textarea{
+   width: 200px;
+  }
+  .login button{
+   width:250px;
+   position: relative;
+   left: 30px;
+  }
+  footer h1{
+   font-size: 16px;
+   float: left;
+  }
+ .about{
+  width: 340px;
+  
+  
+ }
+ .head{width: 300px;
+  
+ }
+ min{width: 300px;
+  
+ }
+ .about{width: 344px;
+  
+ }
+ .contact{
+  width: 344px;
+ }
+ 
+ .project{width: 344px;
+ 
+ }
+ footer{width: 344px;
+  
+ }
+}
+#top{
+ position: fixed;
+ bottom: 10px;
+ right:10px;
+ width: 40px;
+ height: 40px;
+ background: #9767cd;
+ border: none;
+ border-radius: 20px;
+ display: none;
+}
+#top i{
+ color: var(--primiry-color);
+ font-size: 19px;
+ 
+}
+#bottom{
+ position: fixed;
+ top: 460px;
+ right:10px;
+ width: 40px;
+ height: 40px;
+ background: #9767cd;
+ border: none;
+ border-radius: 20px;
+}
+#bottom i{
+ color: var(--primiry-color);
+ font-size: 19px;
+}
+    
+</style>
+
+
+
+<body >
+
+<div class="head">
+ <nav>
+  <img src="md.png">
+ <ul>
+ <li><a href="#home">Home</a></li>
+ <li><a href="#about">Aboute</a></li>
+ <li><a href="#project">projects</a></li>
+ <li><a href="#contact">Contact</a></li>
+ <img src="moon.png" id="moon">
+ </ul>
+ 
+ </nav>
+</div>
+
+<min id="homme">
+<section class="info">
+ 
+ <div class="icon">
+  <a href="https://www.facebook.com/don.med.731572"><i class='bx bxl-facebook-circle'></i></a>
+  <a href="https://instagram.com/bouayach.mohamed?igshid=NGExMmI2YTkyZg=="><i class='bx bxl-instagram-alt' ></i></a>
+  <a href="https://www.linkedin.com/in/mohamed-bouiyach-775631278"><i class='bx bxl-linkedin-square' ></i></a>
+  <a href="https://github.com/Mohammedbouayach"><i class='bx bxl-github' ></i></a>
+  
+ </div>
+ <h1>Hello my name is <span>Mohamed bouayach</span></h1>
+ <p>
+ student at the Faculty of Economics, specializing in Front-End Developer skills including HTML, CSS, JS, and Bootstrap.
+ </p>
+ 
+ <button >download CV</button>
+</section > 
+
+
+ <section class="photo">
+  
+<img src="mi.png" >
+
+ </section>
+ 
+ 
+</min>
+
+<div class="about" id="about">
+ <h1>MY-skills</h1>
+ <div class="skils">
+  <li><h3>html</h3> <span class="br"><span class="html"></span></span></li>
+  
+    <li><h3>css</h3> <span class="br"><span class="css"></span></span></li>
+    
+      <li><h3>java script</h3> <span class="br"><span class="js"></span></span></li>
+      
+        <li><h3>bottstrap</h3> <span class="br"><span class="bottstrap"></span></span></li>
+ </div>
+ 
+</div>
+<div class="project" id="project">
+ <h1>MY-PROJECTS</h1>
+ 
+ <div class="cards">
+  <div class="card" >
+   <a href="https://9alamok.netlify.app/9alamok">
+   <img src="workspace.jpg" >
+   <h4>موقع قلمك</h4>
+   </a>
+  </div>
+  
+  
+    <div class="card" >
+     <a href="https://poyrazkarayel1.netlify.app/poyraz">
+   <img src="maxresdefault.jpg" alt="">
+   <h4>بويراز كراييل </h4>
+     </a>
+  </div>
+
+  
+    <div class="card">
+     <a href="https://squiregame.netlify.app/squire">
+     <img src="tic-tac-toe.png" alt="">
+     <h4>X-O لعبة </h4>
+       </a>
+    </div>
+    
+      <div class="card">
+       <a href="https://mohammedbouayach.github.io/Med/indix1">
+       <img src="vecteezy_3d-isolated-hand-with-things-about-education_11420266_38.png" alt="">
+       <h4>موقع النجاح</h4>
+         </a>
+      </div>
+  
+ </div>
+</div>
+<div class="contact" id="contact">
+ <div class="login">
+  <input type="text" placeholder="first name">
+  <input type="text" placeholder="last name">
+  <input type="email" placeholder="your email">
+  <textarea name="" id="" cols="51" rows="4" placeholder="your massage"></textarea>
+  
+  <button >Send</button>
+  
+  
+ </div>
+ 
+</div>
+<footer>
+ <h1>© <span>MOHAMMED BOUAYACH 2023-2024</span></h1>
+ 
+</footer>
+
+<button id="top"><i class='bx bxs-chevron-up'></i></button>
+
+
+
+<script>
+
+let moon= document.getElementById("moon");
+let btn = document.getElementById("top");
+let under = document.getElementById("bottom")
+
+moon.addEventListener("click",function(){
+ document.body.classList.toggle("dark")
+ if(document.body.classList.contains("dark")){
+  moon.src="sunrise.png"
+ }
+ else{
+moon.src="moon.png"
+ }
+})
+
+window.onscroll= function(){
+ if (scrollY >= 1000) {
+  btn.style.display="block"
+ }
+ else{btn.style.display="none"}
+ 
+}
+
+btn.onclick = ()=>{
+ 
+ scroll({
+  top:0,
+  left:0,
+  behavior:"smooth"
+ })
+}
+
+ 
+ 
+</script>
+</body>
+
+</html>
